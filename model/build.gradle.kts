@@ -1,14 +1,14 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-val kotlin_version: String by extra
+val kotlinVersion: String by extra
 buildscript {
-    var kotlin_version: String by extra
-    kotlin_version = "1.2.61"
+    var kotlinVersion: String by extra
+    kotlinVersion = "1.2.61"
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath(kotlin("gradle-plugin", kotlin_version))
+        classpath(kotlin("gradle-plugin", kotlinVersion))
     }
 }
 
@@ -22,8 +22,8 @@ apply {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8", kotlin_version))
-    testImplementation(kotlin("stdlib-jdk8", kotlin_version))
+    implementation(kotlin("stdlib-jdk8", kotlinVersion))
+    testImplementation(kotlin("stdlib-jdk8", kotlinVersion))
     testImplementation("junit:junit:4.12")
 }
 
