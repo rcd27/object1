@@ -8,6 +8,7 @@ jobs:
       JVM_OPTS: -Xmx3200m
     steps:
       - checkout
+#     TODO: check if `presentation/build.gradle` path is working fine. Otherwise, nake this config know about all modules
       - restore_cache:
           key: jars-{{ checksum "build.gradle.kts" }}-{{ checksum  "presentation/build.gradle" }}
       - run:
