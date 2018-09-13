@@ -33,6 +33,9 @@ android {
             isReturnDefaultValues = true
         }
     }
+    lintOptions {
+        check("Interoperability")
+    }
     packagingOptions.exclude("META-INF/main.kotlin_module")
 }
 
