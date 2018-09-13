@@ -21,6 +21,7 @@ android {
         //      FIXME: duplicated code. Make same rules for all flavors
         getByName("debug") {
             isMinifyEnabled = true
+            // TODO: Proguard -> R8 which is enabled by default. Investigate about R8.
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
         getByName("release") {
