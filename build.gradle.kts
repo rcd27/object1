@@ -15,3 +15,10 @@ allprojects {
         jcenter()
     }
 }
+
+tasks {
+    val clean by registering(Delete::class) {
+        val projectDir = project.projectDir
+        delete(files("$projectDir/coverage", "$projectDir/build", "/app/build"))
+    }
+}
