@@ -1,9 +1,10 @@
-package com.zstas.objectone
+package com.zstas.objectone.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import com.zstas.objectone.R
 import kotlinx.android.synthetic.main.activity_fullscreen.*
 
 /**
