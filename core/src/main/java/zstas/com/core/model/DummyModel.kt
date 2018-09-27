@@ -1,4 +1,4 @@
-package com.zstas.objectone.model
+package zstas.com.core.model
 
 class DummyModel(val x: Int, val y: Int) {
 

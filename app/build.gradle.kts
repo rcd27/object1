@@ -29,10 +29,12 @@ android {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.61")
-    implementation("androidx.appcompat:appcompat:1.0.0-rc02")
-    implementation("androidx.core:core-ktx:1.0.0-rc02")
-    implementation("androidx.legacy:legacy-support-v4:1.0.0-rc02")
+    implementation(project(":core"))
+
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71")
+    implementation("androidx.appcompat:appcompat:1.0.0")
+    implementation("androidx.core:core-ktx:1.0.0")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.1.0-alpha4")
