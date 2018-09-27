@@ -23,26 +23,23 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
-    lintOptions {
-        check("Interoperability")
-    }
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.61")
-    implementation("androidx.appcompat:appcompat:1.0.0-rc02")
-    implementation("androidx.core:core-ktx:1.0.0-rc02")
-    implementation("androidx.legacy:legacy-support-v4:1.0.0-rc02")
+    implementation(project(":core"))
 
-    testImplementation("junit:junit:4.12")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71")
+    implementation("androidx.appcompat:appcompat:1.0.0")
+    implementation("androidx.core:core-ktx:1.0.0")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+
     androidTestImplementation("androidx.test:runner:1.1.0-alpha4")
     androidTestImplementation("androidx.test:rules:1.1.0-alpha4")
     androidTestImplementation("androidx.test.uiautomator:uiautomator-v18:2.2.0-alpha1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.1.0-alpha4")
 }
 
-tasks {
-    val unitTestsReport by registering(JacocoReport::class) {
+tasks.register("unitTestsReport", JacocoReport::class.java ) {
         dependsOn("testDebugUnitTest")
         group = "reports"
         description = "Generate Jacoco test-coverage report"
@@ -52,6 +49,5 @@ tasks {
         reports {
             html.isEnabled = true
             html.destination = file("${project.projectDir}/../coverage/app")
-        }
     }
 }

@@ -1,11 +1,12 @@
 package com.zstas.objectone.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.zstas.objectone.R
 import kotlinx.android.synthetic.main.activity_fullscreen.*
+import zstas.com.core.model.DummyModel
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -48,6 +49,8 @@ class FullscreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val m = DummyModel(4, 5)// just to be sure all dependencies implemented
 
         setContentView(R.layout.activity_fullscreen)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

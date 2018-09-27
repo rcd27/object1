@@ -2,6 +2,7 @@ package com.zstas.objectone.model
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
+import zstas.com.core.model.DummyModel
 
 class DummyModelTest {
 
