@@ -23,9 +23,6 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
-    lintOptions {
-        check("Interoperability")
-    }
 }
 
 dependencies {
@@ -42,8 +39,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.1.0-alpha4")
 }
 
-tasks {
-    val unitTestsReport by registering(JacocoReport::class) {
+tasks.register("unitTestsReport", JacocoReport::class.java ) {
         dependsOn("testDebugUnitTest")
         group = "reports"
         description = "Generate Jacoco test-coverage report"
@@ -53,6 +49,5 @@ tasks {
         reports {
             html.isEnabled = true
             html.destination = file("${project.projectDir}/../coverage/app")
-        }
     }
 }
