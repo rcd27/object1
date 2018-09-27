@@ -36,7 +36,6 @@ dependencies {
     implementation("androidx.core:core-ktx:1.0.0")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
-    testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.1.0-alpha4")
     androidTestImplementation("androidx.test:rules:1.1.0-alpha4")
     androidTestImplementation("androidx.test.uiautomator:uiautomator-v18:2.2.0-alpha1")
