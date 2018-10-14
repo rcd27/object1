@@ -8,9 +8,9 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.rule.ActivityTestRule
-import com.zstas.objectone.R
 import org.junit.Rule
 import org.junit.Test
+import com.zstas.objectone.R
 
 class FullscreenActivityTest {
 

@@ -4,7 +4,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:3.3.0-alpha12")
+        classpath("com.android.tools.build:gradle:3.3.0-alpha13")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.71")
     }
 }
@@ -17,9 +17,7 @@ allprojects {
     }
 }
 
-tasks {
-    val clean by registering(Delete::class) {
-        val projectDir = project.projectDir
-        delete(files("$projectDir/coverage", "$projectDir/build", "/app/build"))
-    }
+tasks.register("clean", Delete::class.java) {
+    val projectDir = project.projectDir
+    delete(files("$projectDir/coverage", "$projectDir/build", "/app/build"))
 }
