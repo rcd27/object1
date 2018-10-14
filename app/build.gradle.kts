@@ -28,6 +28,7 @@ android {
 }
 
 dependencies {
+    // change to api project, because it must be recompiled each time
     implementation(project(":core"))
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71")
