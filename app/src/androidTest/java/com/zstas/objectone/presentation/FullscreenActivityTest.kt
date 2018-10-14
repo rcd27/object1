@@ -1,5 +1,6 @@
 package com.zstas.objectone.presentation
 
+import androidx.annotation.Keep
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.IdlingResource
@@ -12,6 +13,7 @@ import org.junit.Rule
 import org.junit.Test
 import com.zstas.objectone.R
 
+@Keep
 class FullscreenActivityTest {
 
     @Rule
