@@ -1,7 +1,7 @@
 package com.objectone
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.objectone.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
