@@ -1,4 +1,4 @@
-package objectone.zstas.com.object1.ui.main;
+package com.objectone.ui.main;
 
 import android.arch.lifecycle.ViewModel;
 

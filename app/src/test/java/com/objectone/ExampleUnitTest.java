@@ -1,4 +1,4 @@
-package objectone.zstas.com.object1;
+package com.objectone;
 
 import org.junit.Test;
 

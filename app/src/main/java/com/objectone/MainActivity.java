@@ -1,8 +1,8 @@
-package objectone.zstas.com.object1;
+package com.objectone;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import objectone.zstas.com.object1.ui.main.MainFragment;
+import android.support.v7.app.AppCompatActivity;
+import com.objectone.ui.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
 
