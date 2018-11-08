@@ -7,15 +7,22 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.objectone.R
 import com.objectone.core.list.ListRepository
+import kotlinx.android.synthetic.main.fragment_list.*
 
 class ListFragment : Fragment() {
 
-    lateinit var viewModel: ListViewModel
+    private lateinit var viewModel: ListViewModel
+    private var adapter = RecyclerAdapter()
+
+    companion object {
+        fun newInstance() = ListFragment()
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.main_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -26,7 +33,10 @@ class ListFragment : Fragment() {
                 .of(activity!!, ListViewModelFactory(ListRepository()))
                 .get(ListViewModel::class.java)
         viewModel.showItems.observe(this, Observer {
-            // TODO: recycler view accepts List here
+            adapter.submitList(it)
         })
+
+        list_rv.layoutManager = LinearLayoutManager(context)
+        list_rv.adapter = adapter
     }
 }

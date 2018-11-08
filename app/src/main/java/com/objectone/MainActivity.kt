@@ -2,16 +2,16 @@ package com.objectone
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.objectone.ui.main.MainFragment
+import com.objectone.ui.list.ListFragment
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity)
+        setContentView(R.layout.activity_main)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, MainFragment.newInstance())
+                    .replace(R.id.container, ListFragment.newInstance())
                     .commitNow()
         }
     }
