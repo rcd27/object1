@@ -6,6 +6,7 @@ import com.objectone.core.list.data.ObjectOneItem
 
 class ObjectOneViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(viewObject: ObjectOneItem) {
+        itemView.contentDescription = viewObject.id // for testing purpose
         // TODO: data is put here
         /*
         itemView.item_list_id.text = viewObject.id
