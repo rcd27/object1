@@ -1,4 +1,4 @@
-package com.objectone.core.data
+package com.objectone.core
 
 /**
  * A generic class that holds a value with its

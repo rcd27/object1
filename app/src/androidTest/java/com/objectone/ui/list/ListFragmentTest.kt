@@ -5,7 +5,7 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.rule.ActivityTestRule
-import com.objectone.MainActivity
+import com.objectone.ui.MainActivity
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule

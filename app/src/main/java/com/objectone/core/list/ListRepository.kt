@@ -1,10 +1,11 @@
 package com.objectone.core.list
 
-import com.objectone.core.data.Result
-import com.objectone.core.data.Success
+import com.objectone.core.Result
+import com.objectone.core.Success
 import com.objectone.core.list.data.ObjectOneItem
+import javax.inject.Inject
 
-class ListRepository {
+class ListRepository @Inject constructor() {
     fun getList(): Result<List<ObjectOneItem>> {
         return Success(listOf(
                 ObjectOneItem("1", "Title#1", "/fakeImage"),

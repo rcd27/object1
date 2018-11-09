@@ -3,12 +3,13 @@ package com.objectone.ui.list
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.objectone.core.data.Error
-import com.objectone.core.data.Success
+import com.objectone.core.Error
+import com.objectone.core.Success
 import com.objectone.core.list.ListRepository
 import com.objectone.core.list.data.ObjectOneItem
+import javax.inject.Inject
 
-class ListViewModel(listRepository: ListRepository) : ViewModel() {
+class ListViewModel @Inject constructor(listRepository: ListRepository) : ViewModel() {
 
     val showItems = MutableLiveData<List<ObjectOneItem>>()
 

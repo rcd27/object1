@@ -1,8 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-
-// This is for toothpick-compiler
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -24,6 +22,21 @@ android {
     dataBinding {
         enabled = true
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+kapt {
+    generateStubs = true
+
+    arguments {
+        arg("toothpick_registry_package_name", "com.objectone")
+    }
 }
 
 dependencies {
@@ -44,6 +57,7 @@ dependencies {
 
     // Dependency Injection
     kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:1.1.3"
+    implementation 'com.github.stephanenicolas.toothpick:toothpick-runtime:1.1.3'
     implementation 'com.github.stephanenicolas.toothpick:smoothie:1.1.3'
 
     // Extensions
