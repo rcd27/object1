@@ -2,6 +2,7 @@ package com.objectone
 
 import android.app.Application
 import com.objectone.toothpick.ApplicationModule
+import com.objectone.toothpick.NetworkModule
 import com.objectone.toothpick.Scopes
 import toothpick.Toothpick
 import toothpick.configuration.Configuration.forDevelopment
@@ -21,6 +22,8 @@ class App : Application() {
         FactoryRegistryLocator.setRootRegistry(com.objectone.FactoryRegistry())
 
         val appScope = Toothpick.openScope(Scopes.APP)
-        appScope.installModules(ApplicationModule(this))
+        appScope.installModules(
+                ApplicationModule(this),
+                NetworkModule("localhost:8080"))
     }
 }
