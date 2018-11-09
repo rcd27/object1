@@ -1,6 +1,7 @@
 package com.objectone.toothpick
 
 import androidx.fragment.app.FragmentActivity
+import com.objectone.core.list.ListRepository
 import com.objectone.ui.list.ListViewModel
 import toothpick.config.Module
 

@@ -3,9 +3,10 @@ package com.objectone.core.list
 import com.objectone.core.Result
 import com.objectone.core.Success
 import com.objectone.core.list.data.ObjectOneItem
+import com.objectone.data.net.Api
 import javax.inject.Inject
 
-class ListRepository @Inject constructor() {
+class ListRepository @Inject constructor(api: Api) {
     fun getList(): Result<List<ObjectOneItem>> {
         return Success(listOf(
                 ObjectOneItem("1", "Title#1", "/fakeImage"),
