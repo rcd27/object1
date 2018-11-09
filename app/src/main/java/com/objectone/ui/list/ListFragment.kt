@@ -30,6 +30,7 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // TODO: delegate this `by lazy` or something
         val listScope = Toothpick.openScopes(Scopes.MAIN, Scopes.LIST)
         listScope.installModules(ListModule(activity!!))
         viewModel = listScope.getInstance(ListViewModel::class.java)
