@@ -24,6 +24,6 @@ class App : Application() {
         val appScope = Toothpick.openScope(Scopes.APP)
         appScope.installModules(
                 ApplicationModule(this),
-                NetworkModule("https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/"))
+                NetworkModule("https://raw.githubusercontent.com/rcd27/object1/master/rest_api/"))
     }
 }
