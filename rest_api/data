@@ -1,0 +1,27 @@
+[
+  {
+    "id":"1",
+    "title":"Businessmen",
+    "image":"https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/businessman.svg"
+  },
+  {
+    "id":"2",
+    "title":"Girl",
+    "image":"https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/girl.svg"
+  },
+  {
+    "id":"3",
+    "title":"Worker",
+    "image":"https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/worker.svg"
+  },
+  {
+    "id":"4",
+    "title":"Man",
+    "image":"https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/man.svg"
+  },
+  {
+    "id":"5",
+    "title":"Another Man",
+    "image":"https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/another_man.svg"
+    }
+]
