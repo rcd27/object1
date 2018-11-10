@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface Api {
 
-    @GET("/somestuff")
+    @GET("data")
     fun getObjects(): Single<List<ObjectOneItem>>
 }

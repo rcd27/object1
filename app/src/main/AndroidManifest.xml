@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.objectone">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <!--FIXME: handle suppressed warnings-->
     <application
         android:allowBackup="true"
