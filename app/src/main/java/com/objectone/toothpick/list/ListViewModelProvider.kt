@@ -1,4 +1,4 @@
-package com.objectone.toothpick
+package com.objectone.toothpick.list
 
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProviders

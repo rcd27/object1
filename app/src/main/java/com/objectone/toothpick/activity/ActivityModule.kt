@@ -1,4 +1,4 @@
-package com.objectone.toothpick
+package com.objectone.toothpick.activity
 
 import toothpick.config.Module
 

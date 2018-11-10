@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.objectone.R
-import com.objectone.toothpick.ListModule
+import com.objectone.toothpick.list.ListModule
 import com.objectone.toothpick.Scopes
 import kotlinx.android.synthetic.main.fragment_list.*
 import toothpick.Toothpick

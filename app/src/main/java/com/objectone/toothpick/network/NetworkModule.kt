@@ -1,4 +1,4 @@
-package com.objectone.toothpick
+package com.objectone.toothpick.network
 
 import com.objectone.data.net.Api
 import toothpick.config.Module

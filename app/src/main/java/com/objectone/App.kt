@@ -1,8 +1,8 @@
 package com.objectone
 
 import android.app.Application
-import com.objectone.toothpick.ApplicationModule
-import com.objectone.toothpick.NetworkModule
+import com.objectone.toothpick.app.ApplicationModule
+import com.objectone.toothpick.network.NetworkModule
 import com.objectone.toothpick.Scopes
 import toothpick.Toothpick
 import toothpick.configuration.Configuration.forDevelopment
