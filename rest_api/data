@@ -1,27 +1,27 @@
 [
     {
         "id": "1",
-        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/another_man.svg",
-        "title": "Another man"
+        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/images/man(2).png",
+        "title": "Man"
     },
     {
         "id": "2",
-        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/businessman.svg",
+        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/images/man(1).png",
         "title": "Businessman"
     },
     {
         "id": "3",
-        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/girl.svg",
+        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/images/girl.png",
         "title": "Girl"
     },
     {
         "id": "4",
-        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/man.svg",
-        "title": "Man"
+        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/images/man.png",
+        "title": "Another man"
     },
     {
         "id": "5",
-        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/worker.svg",
-        "title": "Worker"
+        "image": "https://raw.githubusercontent.com/rcd27/object1/rcd/mocked-rest-api/rest_api/images/man(3).png",
+        "title": "One more man"
     }
 ]
