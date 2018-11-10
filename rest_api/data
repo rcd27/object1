@@ -1,27 +1,43 @@
 [
-  {
-    "id": "1",
-    "title": "Businessmen",
-    "image": "https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/businessman.svg"
-  },
-  {
-    "id": "2",
-    "title": "Girl",
-    "image": "https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/girl.svg"
-  },
-  {
-    "id": "3",
-    "title": "Worker",
-    "image": "https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/worker.svg"
-  },
-  {
-    "id": "4",
-    "title": "Man",
-    "image": "https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/man.svg"
-  },
-  {
-    "id": "5",
-    "title": "Another Man",
-    "image": "https://github.com/rcd27/object1/blob/rcd/mocked-rest-api/rest_api/another_man.svg"
-  }
+    {
+        "id": "1",
+        "image": "https://raw.githubusercontent.com/artem-zinnatullin/qualitymatters/master/rest_api/images/1_preview.jpg",
+        "title": "1. Fail fast, fail early",
+    },
+    {
+        "id": "2",
+        "image": "https://raw.githubusercontent.com/artem-zinnatullin/qualitymatters/master/rest_api/images/2_preview.jpeg",
+        "title": "2. Code quality",
+    },
+    {
+        "id": "3",
+        "image": "https://raw.githubusercontent.com/artem-zinnatullin/qualitymatters/master/rest_api/images/3_preview.jpeg",
+        "title": "3. Static Code/Resources Analysis",
+    },
+    {
+        "id": "4",
+        "image": "https://raw.githubusercontent.com/artem-zinnatullin/qualitymatters/master/rest_api/images/4_preview.png",
+        "title": "4. Unit tests",
+    },
+    {
+        "id": "5",
+        "image": "https://raw.githubusercontent.com/artem-zinnatullin/qualitymatters/master/rest_api/images/5_preview.png",
+        "title": "5. Code Coverage",
+    },
+    {
+        "id": "6",
+        "image_preview_url": "https://raw.githubusercontent.com/artem-zinnatullin/qualitymatters/master/rest_api/images/6_preview.png",
+        "title": "6. Functional (UI) tests",
+        "short_description": "Yes. More tests. Functional tests check the functionality of your app from the user's point of view. Functional test launches your app and verifies that certain feature works correctly, ie loaded data displayed in the UI and so on."
+    },
+    {
+        "id": "7",
+        "image": "https://raw.githubusercontent.com/artem-zinnatullin/qualitymatters/master/rest_api/images/7_preview.jpg",
+        "title": "7. Integration tests",
+    },
+    {
+        "id": "8",
+        "image": "https://raw.githubusercontent.com/artem-zinnatullin/qualitymatters/master/rest_api/images/8_preview.jpeg",
+        "title": "8. Developer Settings Menu",
+    }
 ]
