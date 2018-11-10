@@ -3,22 +3,24 @@ package com.objectone.ui.list
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.objectone.core.Error
-import com.objectone.core.Success
 import com.objectone.core.list.ListRepository
 import com.objectone.core.list.data.ObjectOneItem
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
 class ListViewModel @Inject constructor(listRepository: ListRepository) : ViewModel() {
 
     val showItems = MutableLiveData<List<ObjectOneItem>>()
+    val showError = MutableLiveData<String>()
+    val cd = CompositeDisposable()
 
     init {
-        val result = listRepository.getList()
-        when (result) {
-            is Success -> showItems.value = result.data
-            is Error -> throw IllegalStateException("Error loading list")
-        }
+        cd.add(listRepository.getList()
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                        { result -> showItems.postValue(result) },
+                        { error -> showError.postValue(error.message) }))
     }
 }
 

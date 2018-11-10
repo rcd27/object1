@@ -2,12 +2,13 @@ package com.objectone.ui.list
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.objectone.R
 import com.objectone.core.list.data.ObjectOneItem
 
-class RecyclerAdapter : ListAdapter<ObjectOneItem, ObjectOneViewHolder>(DIFF_CALLBACK) {
+class RecyclerAdapter(private val fragment: Fragment) : ListAdapter<ObjectOneItem, ObjectOneViewHolder>(DIFF_CALLBACK) {
 
     companion object {
         val DIFF_CALLBACK = object : DiffUtil.ItemCallback<ObjectOneItem>() {
@@ -25,6 +26,7 @@ class RecyclerAdapter : ListAdapter<ObjectOneItem, ObjectOneViewHolder>(DIFF_CAL
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ObjectOneViewHolder {
         return ObjectOneViewHolder(
+                fragment,
                 LayoutInflater
                         .from(parent.context)
                         .inflate(R.layout.view_list_item, parent, false))

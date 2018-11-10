@@ -3,7 +3,7 @@ package com.objectone.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.objectone.R
-import com.objectone.toothpick.ActivityModule
+import com.objectone.toothpick.activity.ActivityModule
 import com.objectone.toothpick.Scopes
 import com.objectone.ui.list.ListFragment
 import toothpick.Toothpick

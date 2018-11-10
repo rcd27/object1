@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.objectone.R
-import com.objectone.toothpick.ListModule
 import com.objectone.toothpick.Scopes
+import com.objectone.toothpick.list.ListModule
 import kotlinx.android.synthetic.main.fragment_list.*
 import toothpick.Toothpick
 
@@ -17,7 +17,7 @@ class ListFragment : Fragment() {
 
     lateinit var viewModel: ListViewModel
 
-    private var adapter = RecyclerAdapter()
+    private val adapter = RecyclerAdapter(this)
 
     companion object {
         fun newInstance() = ListFragment()

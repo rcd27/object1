@@ -1,4 +1,4 @@
-package com.objectone.toothpick
+package com.objectone.toothpick.app
 
 import android.app.Application
 import toothpick.config.Module
