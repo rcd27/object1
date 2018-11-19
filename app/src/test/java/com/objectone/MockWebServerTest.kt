@@ -1,7 +1,7 @@
 package com.objectone
 
 import com.objectone.core.list.data.ObjectOneItem
-import com.objectone.data.net.Api
+import com.objectone.data.list.net.ListApi
 import io.reactivex.schedulers.Schedulers
 import okhttp3.OkHttpClient
 import okhttp3.mockwebserver.MockResponse
@@ -33,7 +33,7 @@ class MockWebServerTest {
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(Schedulers.io()))
                 .build()
-        val api = retrofit.create(Api::class.java)
+        val api = retrofit.create(ListApi::class.java)
 
         assertThat(api.getObjects().blockingGet(), hasItem(ObjectOneItem("1", "Wasup", "IMAAAGE")))
         server.shutdown()

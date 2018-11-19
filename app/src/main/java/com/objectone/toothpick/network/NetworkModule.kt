@@ -1,14 +1,10 @@
 package com.objectone.toothpick.network
 
-import com.objectone.data.net.Api
+import okhttp3.OkHttpClient
 import toothpick.config.Module
-import javax.inject.Qualifier
 
-class NetworkModule(baseUrl: String) : Module() {
+class NetworkModule : Module() {
     init {
-        bind(String::class.java).withName(BaseUrl::class.java).toInstance(baseUrl)
-        bind(Api::class.java).toProvider(ApiProvider::class.java).providesSingletonInScope()
+        bind(OkHttpClient::class.java).toProvider(OkHttpClientProvider::class.java).providesSingletonInScope()
     }
 }
-
-@Qualifier annotation class BaseUrl

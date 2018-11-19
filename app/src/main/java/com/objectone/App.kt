@@ -4,6 +4,7 @@ import android.app.Application
 import com.objectone.toothpick.app.ApplicationModule
 import com.objectone.toothpick.network.NetworkModule
 import com.objectone.toothpick.Scopes
+import com.objectone.toothpick.auth.AuthModule
 import toothpick.Toothpick
 import toothpick.configuration.Configuration.forDevelopment
 import toothpick.configuration.Configuration.forProduction
@@ -24,6 +25,7 @@ class App : Application() {
         val appScope = Toothpick.openScope(Scopes.APP)
         appScope.installModules(
                 ApplicationModule(this),
-                NetworkModule("https://raw.githubusercontent.com/rcd27/object1/master/rest_api/"))
+                AuthModule(),
+                NetworkModule())
     }
 }
