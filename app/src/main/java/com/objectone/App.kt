@@ -1,10 +1,10 @@
 package com.objectone
 
 import android.app.Application
+import com.objectone.auth.AuthModule
+import com.objectone.toothpick.Scopes
 import com.objectone.toothpick.app.ApplicationModule
 import com.objectone.toothpick.network.NetworkModule
-import com.objectone.toothpick.Scopes
-import com.objectone.toothpick.auth.AuthModule
 import toothpick.Toothpick
 import toothpick.configuration.Configuration.forDevelopment
 import toothpick.configuration.Configuration.forProduction
