@@ -1,4 +1,4 @@
-package com.objectone.auth
+package com.objectone.toothpick.auth
 
 import com.objectone.data.auth.net.AuthApi
 import io.reactivex.schedulers.Schedulers

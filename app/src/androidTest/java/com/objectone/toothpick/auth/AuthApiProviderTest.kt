@@ -1,4 +1,4 @@
-package com.objectone.auth
+package com.objectone.toothpick.auth
 
 import androidx.test.core.app.ApplicationProvider
 import com.objectone.App
