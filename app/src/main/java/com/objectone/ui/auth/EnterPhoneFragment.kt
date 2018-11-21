@@ -24,7 +24,6 @@ class EnterPhoneFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        enter_phone_text_input_edit_text.requestFocus()
-        (activity as MainActivity).showKeyboard(enter_phone_text_input_edit_text)
+        (activity as MainActivity).showKeyboard()
     }
 }

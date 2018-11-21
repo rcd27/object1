@@ -2,7 +2,6 @@ package com.objectone.ui
 
 import android.content.Context
 import android.os.Bundle
-import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import com.objectone.R
@@ -27,10 +26,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     // FIXME: not working
-    fun showKeyboard(v: View) {
-        if (v.requestFocus()) {
-            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.showSoftInput(v, InputMethodManager.SHOW_IMPLICIT)
-        }
+    fun showKeyboard() {
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY)
     }
 }
