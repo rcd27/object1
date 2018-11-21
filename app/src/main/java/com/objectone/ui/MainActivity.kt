@@ -2,10 +2,12 @@ package com.objectone.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import com.objectone.R
 import com.objectone.toothpick.Scopes
 import com.objectone.toothpick.activity.ActivityModule
 import com.objectone.ui.auth.AuthFlowFragment
+import com.objectone.ui.auth.EnterPhoneFragment
 import toothpick.Toothpick
 
 class MainActivity : AppCompatActivity() {
@@ -18,10 +20,8 @@ class MainActivity : AppCompatActivity() {
         activityScope.installModules(ActivityModule())
         Toothpick.inject(this, activityScope)
 
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, AuthFlowFragment.newInstance())
-                    .commitNow()
-        }
+        supportFragmentManager.beginTransaction()
+                .replace(R.id.container, AuthFlowFragment.newInstance())
+                .commitNow()
     }
 }

@@ -2,4 +2,5 @@
 <resources>
     <string name="list_item_avatar_description">avatar</string>
     <string name="phone_number_input">phone number input</string>
+    <string name="sms_code_input">sms code input</string>
 </resources>

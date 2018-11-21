@@ -6,16 +6,16 @@
     android:orientation="vertical">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/enter_phone_text_input_layout"
+        android:id="@+id/enter_code_text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/sms_code_input"
         app:counterTextAppearance="?android:attr/textAppearanceMedium">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/enter_phone_text_input_edit_text"
+            android:id="@+id/enter_code_text_input_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/phone_number_input"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
     </com.google.android.material.textfield.TextInputLayout>
 
