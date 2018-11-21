@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.objectone.R
 import com.objectone.toothpick.Scopes
 import com.objectone.toothpick.activity.ActivityModule
-import com.objectone.ui.list.ListFragment
+import com.objectone.ui.auth.AuthFlowFragment
 import toothpick.Toothpick
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, ListFragment.newInstance())
+                    .replace(R.id.container, AuthFlowFragment.newInstance())
                     .commitNow()
         }
     }

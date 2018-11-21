@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="list_item_avatar_description">avatar</string>
+    <string name="phone_number_input">phone number input</string>
 </resources>
