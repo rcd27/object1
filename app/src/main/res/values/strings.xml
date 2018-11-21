@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Object1</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="enter_sms_code">Enter SMS code</string>
 </resources>

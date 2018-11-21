@@ -5,10 +5,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:text="@string/enter_sms_code"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/enter_code_text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/sms_code_input"
         app:counterTextAppearance="?android:attr/textAppearanceMedium">
 
@@ -16,6 +25,8 @@
             android:id="@+id/enter_code_text_input_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
     </com.google.android.material.textfield.TextInputLayout>
 
