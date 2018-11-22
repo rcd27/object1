@@ -15,7 +15,7 @@ import org.junit.Test
 @LargeTest
 class AuthFlowFragmentTest {
 
-    // FIXME: we should test fragments isolated from activities if possible
+    // FIXME: we should test fragments isolated from activities if possible. This can be done with FragmentScenario
     @Rule
     @JvmField
     // Given for all cases: activity starts with no Intent
