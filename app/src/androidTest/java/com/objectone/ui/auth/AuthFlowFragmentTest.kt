@@ -16,6 +16,7 @@ import org.junit.Test
 class AuthFlowFragmentTest {
 
     // FIXME: we should test fragments isolated from activities if possible. This can be done with FragmentScenario
+    // TODO: for testing fragments, see: https://www.youtube.com/watch?v=9O1D_Ytk0xg&list=PLWz5rJ2EKKc8WFYCR9esqGGY0vOZm2l6e&linkId=59982317
     @Rule
     @JvmField
     // Given for all cases: activity starts with no Intent
