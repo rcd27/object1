@@ -5,6 +5,9 @@ buildscript {
         jcenter()
     }
     dependencies {
+        // TODO: agp should be upgraded to 3.4.0 version
+        // TODO: as well as Android Studio -> v3.4
+        // see: https://docs.gradle.org/5.0/userguide/upgrading_version_4.html
         classpath 'com.android.tools.build:gradle:3.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.71"
     }
